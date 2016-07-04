@@ -4,11 +4,17 @@
       <meta charset="UTF-8">
       <title>svgTest</title>
       <link rel="stylesheet" type="text/css" href="styles.css">
+      <script type="text/javascript">
+         function headClicked(myID) {
+            document.getElementById(myID).className ='clickidy';
+            //alert('hi');
+         }
+      </script>
    </head>
    <body>
       <div style="width:30px">
          <object
-            id="mouthTop"
+            id="mouthTop1"
             data="svg/mouthTop.svg"
             type="image/svg+xml"
             width="100%">
@@ -18,7 +24,7 @@
 
       <div style="width:60px">
          <object
-            id="mouthTop"
+            id="mouthTop2"
             data="svg/mouthTop.svg"
             type="image/svg+xml"
             width="100%">
@@ -28,17 +34,18 @@
 
       <div style="width:180px">
          <object
-            id="mouthTop"
+            id="mouthTop3"
             data="svg/mouthTop.svg"
             type="image/svg+xml"
             width="100%">
          </object>
          <object data="svg/mouthBottom.svg" type="image/svg+xml" width="100%" style="display:block"></object>
       </div>
-
+      <button name="aButton" onclick="headClicked('mouthTop3')">Trigger Animation</button>
+      <br />
       <div style="width:300px">
          <object
-            id="mouthTop"
+            id="mouthTop4"
             data="svg/mouthTop.svg"
             type="image/svg+xml"
             width="100%">

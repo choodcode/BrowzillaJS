@@ -1,11 +1,17 @@
-object#mouthTop {
+div,object {
    display: block;
+
+}
+
+.clickidy {
    animation-name: crunch;
    animation-duration: 1s;
    animation-delay: 0.5s;
    animation-iteration-count: infinite;
    animation-direction: alternate;
+   animation-timing-function: ease-out;
 }
+
 
 @keyframes crunch {
    0% {
