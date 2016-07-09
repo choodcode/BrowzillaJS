@@ -4,14 +4,10 @@
       <meta charset="UTF-8">
       <title>svgTest</title>
       <link rel="stylesheet" type="text/css" href="styles.css"/>
-      <script type="text/javascript">
-         function headClicked(myID) {
-            document.getElementById(myID).className ='clickidy';
-            //alert('hi');
-         }
-      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    </head>
    <body>
+      <button id="aButton">Trigger Animation</button>
       <div style="width:30px">
          <object
             id="mouthTop1"
@@ -41,7 +37,6 @@
          </object>
          <object data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
       </div>
-      <button name="aButton" onclick="headClicked('mouthTop3')">Trigger Animation</button>
       <br />
       <div style="width:300px">
          <object
@@ -51,6 +46,12 @@
             width="100%">
          </object>
          <object data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
+
+         <script type="text/javascript">
+            $("button#aButton").on("click", function() {
+               $("object#mouthTop3").addClass("clickidy");
+            });
+         </script>
       </div>
    </body>
 </html>
