@@ -15,7 +15,7 @@
             <img src="http://lorempixel.com/320/240/" />
          </div>
 
-         <div id="zillaHead" style="width:180px">
+         <div id="zillaHead">
             <object id="mouthTop" data="svg/mouthTop.svg" type="image/svg+xml" width="100%"></object>
             <object id="mouthBottom" data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
          </div>
@@ -24,7 +24,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script type="text/javascript">
          $("button#chomp").on("click", function() {
-            $("object#mouthTop").addClass("clickidy");
+            $("div#zillaHead").addClass("animEnter");
+            $("object#mouthTop").addClass("animCrunch");
          });
       </script>
    </body>
