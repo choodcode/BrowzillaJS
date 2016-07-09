@@ -10,13 +10,15 @@
       <h2>BrowzillaJS</h2>
       <button id="chomp">Chomp!</button>
       <br />
-      <div>
-         <img src="http://lorempixel.com/320/240/" />
-      </div>
+      <div id="container">
+         <div id="imagePane">
+            <img src="http://lorempixel.com/320/240/" />
+         </div>
 
-      <div style="width:180px;">
-         <object id="mouthTop" data="svg/mouthTop.svg" type="image/svg+xml" width="100%"></object>
-         <object id="mouthBottom" data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
+         <div id="zillaHead" style="width:180px">
+            <object id="mouthTop" data="svg/mouthTop.svg" type="image/svg+xml" width="100%"></object>
+            <object id="mouthBottom" data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
+         </div>
       </div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

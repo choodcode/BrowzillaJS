@@ -1,3 +1,24 @@
+div#container {
+  width: 640px;
+  height: 480px;
+  position: relative;
+}
+
+div#imagePane, div#zillaHead  {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+div#imagePane {
+   width: 100%;
+   height: 100%;
+}
+
+div#zillaHead {
+   z-index: 10;
+}
+
 object {
    display: block;
 }
@@ -10,7 +31,6 @@ object {
    animation-direction: alternate;
    animation-timing-function: ease-out;
 }
-
 
 @keyframes crunch {
    0% {
