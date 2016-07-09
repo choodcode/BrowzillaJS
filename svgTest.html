@@ -7,7 +7,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    </head>
    <body>
-      <button id="aButton">Trigger Animation</button>
+      <button id="singleAnim">Trigger Single Animation</button>
+      <button id="allAnim">Trigger ALL Animations</button>
       <div style="width:30px">
          <object
             id="mouthTop1"
@@ -48,8 +49,12 @@
          <object data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
 
          <script type="text/javascript">
-            $("button#aButton").on("click", function() {
+            $("button#singleAnim").on("click", function() {
                $("object#mouthTop3").addClass("clickidy");
+            });
+
+            $("button#allAnim").on("click", function() {
+               $("object[id^=mouthTop]").addClass("clickidy");
             });
          </script>
       </div>
