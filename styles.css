@@ -34,15 +34,30 @@ object {
    animation-fill-mode: forwards;
 }
 
+.animExit {
+   animation-name: headExit;
+   animation-duration: 1s;
+   animation-delay: 0s;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+}
+
 .animCrunch {
    animation-name: crunch;
-   animation-duration: 1s;
+   animation-duration: .75s;
    animation-delay: 0s;
    animation-iteration-count: 1;
    animation-timing-function: ease-in;
 }
 
 @keyframes headEnter {
+   100% {
+      transform: translatex(175px);
+   }
+}
+
+@keyframes headExit {
    100% {
       transform: translatex(175px);
    }

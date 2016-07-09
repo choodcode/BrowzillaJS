@@ -26,6 +26,10 @@
          $("button#chomp").on("click", function() {
             $("div#zillaHead").addClass("animEnter");
             $("object#mouthTop").addClass("animCrunch");
+
+            $("div#zillaHead").one("animationend", function() {
+               $(this).addClass("animExit");
+            });
          });
       </script>
    </body>
