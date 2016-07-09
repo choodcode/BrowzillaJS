@@ -2,10 +2,28 @@
 <html>
    <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>BrowzillaJS</title>
       <link rel="stylesheet" type="text/css" href="styles.css">
    </head>
    <body>
-      Something...
+      <h2>BrowzillaJS</h2>
+      <button id="chomp">Chomp!</button>
+      <br />
+      <div>
+         <img src="http://lorempixel.com/320/240/" />
+      </div>
+
+      <div style="width:180px;">
+         <object id="mouthTop" data="svg/mouthTop.svg" type="image/svg+xml" width="100%"></object>
+         <object id="mouthBottom" data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript">
+         $("button#chomp").on("click", function() {
+            $("object#mouthTop").addClass("clickidy");
+         });
+      </script>
    </body>
 </html>
